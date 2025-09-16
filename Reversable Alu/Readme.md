@@ -1,38 +1,29 @@
-# Reversible ALU Project (alu_db)
+Description:
+A reversible ALU design implemented in Verilog using reversible logic gates such as Peres, Toffoli, Fredkin, TR, and DKG.
+The ALU performs arithmetic and logical operations, while also integrating multiplexer, decoder, multiplier, and storage modules.
 
-## 📌 Overview
-This project implements a **reversible Arithmetic Logic Unit (ALU)** in Verilog using reversible logic gates like Peres, Toffoli, Fredkin, TR, and DKG.  
-The design supports **arithmetic, logical, decoding, multiplexing, multiplication, and storage operations**, and is verified through simulation and synthesis.
+Features:
 
-## 🛠 Features
-- **Arithmetic Operations**
-  - Addition (Full Adder using Peres gates)
-  - Subtraction (DKG-based Subtractor)
-  - 2-bit Multiplication (Peres + Half Adder)
-- **Logical Operations**
-  - AND, OR, NOT, XOR, XNOR, NAND, NOR
-- **Other Functional Units**
-  - 2:1 Storage Element (Fredkin gate)
-  - 4:1 Multiplexer (using MF gates)
-  - 2-to-4 Decoder (Peres, TR, CNOT based)
-- Fully **reversible design** → no information loss.
+Arithmetic Operations:
+ -Addition (Full Adder with Peres gates)
+ -Subtraction (DKG Subtractor)
+ -2-bit Multiplication (Peres + Half Adder)
+Logical Operations:
+ -AND, OR, NOT, XOR, XNOR, NAND, NOR
+Other Functions:
+ -4:1 Multiplexer
+ -2-to-4 Decoder
+ -Storage element using Fredkin gate
+ -Fully reversible design (no information loss)
+Modules Included:
+ -Full Adder (Reversible Peres gates)
+ -Subtractor (DKG)
+ -2-bit Multiplier (Peres + Half Adder)
+ -Multiplexer 4:1
+ -Decoder 2:4
+ -Storage Element (Fredkin)
+ -Logic Gate Implementations
 
-## 🖼 Schematic
-The structural schematic of the ALU is shown below:
+Block Diagram :
+<img width="1098" height="331" alt="image" src="https://github.com/user-attachments/assets/87f19b64-c817-4f7f-8383-6079eae76a5e" />
 
-![ALU Schematic](alu_schematic.png)
-
-*(You can replace `alu_schematic.png` with the uploaded image file.)*
-
-## ▶️ Simulation
-- **Testbench**: `alu_db_tb.v` provided to verify correctness.
-- Tested in **ModelSim / Vivado / Icarus Verilog**.
-- Example output signals:
-  - Adder: `Sum`, `Carry`
-  - Subtractor: `Diff`, `Bout`
-  - Multiplier: `Product[3:0]`
-  - Decoder: `Decoder_Y[3:0]`
-  - Storage: `Storing`
-  - Logic gates: `AND, OR, NOT, XOR, XNOR, NAND, NOR`
-
-## 📂 Project Structure
