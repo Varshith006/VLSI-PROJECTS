@@ -8,13 +8,16 @@ Arithmetic Operations:
  -Addition (Full Adder with Peres gates)
  -Subtraction (DKG Subtractor)
  -2-bit Multiplication (Peres + Half Adder)
+ 
 Logical Operations:
  -AND, OR, NOT, XOR, XNOR, NAND, NOR
+ 
 Other Functions:
  -4:1 Multiplexer
  -2-to-4 Decoder
  -Storage element using Fredkin gate
  -Fully reversible design (no information loss)
+ 
 Modules Included:
  -Full Adder (Reversible Peres gates)
  -Subtractor (DKG)
